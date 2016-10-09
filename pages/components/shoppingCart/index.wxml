@@ -1,0 +1,27 @@
+<view class="container">
+    <view class="container_list">
+        <block wx:for="{{products}}" wx:for-item="item">
+            <view class="p_detail">
+                <!--图片-->
+                <view class="p_img">
+                    <image class="image" src="{{item.imgUrl}}"/>
+                </view>
+                <!--标题-->
+                <view class="p_text">
+                    <view class="p_name">{{item.name}}</view>
+                    <view class="p_property">
+                        <block wx:for="{{item.property}}" wx:for-item="item1">
+                            {{item1.key}}：{{item1.value}}
+                        </block>
+                    </view>
+                    <view class="p_price_info">
+                        <view class="p_price">￥{{item.price}}</view>
+                    </view>
+                </view>
+            </view>
+        </block>
+    </view>
+    <view class="total">
+        <view class=""></view>
+    </view>
+</view>

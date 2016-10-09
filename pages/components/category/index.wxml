@@ -1,0 +1,61 @@
+<view class="container">
+    <view class="category">
+        <view class="list">
+            <block wx:for="{{category_list}}">
+                <view data-index="{{index}}" class="li">
+                    {{item}}
+                </view>
+            </block>
+        </view>
+
+        <view class="detail">
+            <view class="ad">
+                <image class="ad_img" src="{{category_book.imgUrl}}"/>
+            </view>
+            <view class="detail_item">
+                <view class="detail_title">
+                    {{category_book.hot_book.title}}
+                </view>
+                <view class="detail_list">
+                    <block wx:for="{{category_book.hot_book.list}}">
+                        <block wx:if="{{(index+1)%3==0}}">
+                            <view class="item clear-border">{{item}}</view>
+                        </block>
+                        <block wx:else>
+                            <view class="item">{{item}}</view>
+                        </block>
+                    </block>
+                </view>
+            </view>
+            <view class="detail_item">
+                <view class="detail_title">
+                    {{category_book.e_book.title}}
+                </view>
+                <view class="detail_list">
+                    <block wx:for="{{category_book.e_book.list}}">
+                        <block wx:if="{{(index+1)%3==0}}">
+                            <view class="item clear-border">{{item.name}}</view>
+                        </block>
+                        <block wx:else>
+                            <view class="item">{{item.name}}</view>
+                        </block>
+                    </block>
+                </view>
+            </view>
+
+            <view class="products">
+                <view class="products_title">
+                    {{category_book.e_book.title}}
+                </view>
+                <view class="products_list">
+                    <block wx:for="{{category_book.e_book.list}}">
+                        <view class="p_item">
+                            <image class="p_img" src="{{item.imgUrl}}"/>
+                            <view class="p_name">{{item.name}}</view>
+                        </view>
+                    </block>
+                </view>
+            </view>
+        </view>
+    </view>
+</view>

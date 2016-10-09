@@ -1,0 +1,47 @@
+.container{
+    max-width: 750rpx;
+    min-height: 100%;
+    margin: 0 auto;
+    background-color:#FBF9FE;
+}
+
+.p_detail{
+    min-height: 150rpx;
+    max-width: 750rpx;
+    overflow: hidden;
+    font-size: 20rpx;
+    border-bottom: 1px solid #e5e5e5;
+    padding: 14rpx;
+    background-color: #FFF;
+}
+
+.p_img{
+    height: 150rpx;
+    width: 150rpx;
+    float: left;
+}
+
+.image{
+    height: 150rpx;
+    width: 150rpx;
+    border: 0;
+    vertical-align: middle;
+}
+
+.p_text{
+    margin-left:180rpx; 
+    line-height: 50rpx;
+}
+
+.p_price_info{
+    text-align: right;
+    color:crimson;
+}
+
+.p_price{
+    font-size: 24rpx;
+}
+
+.total{
+
+}
