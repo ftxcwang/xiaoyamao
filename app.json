@@ -1,15 +1,16 @@
 {
   "pages":[
+    "pages/components/index/index",
     "pages/components/shoppingCart/index",
     "pages/components/category/index",
-    "pages/components/index/index",
     "pages/components/my/index"
   ],
   "window":{
     "backgroundTextStyle":"light",
-    "navigationBarBackgroundColor": "#fff",
+    "navigationBarBackgroundColor": "#FBF9FE",
     "navigationBarTitleText": "WeChat",
-    "navigationBarTextStyle":"black"
+    "navigationBarTextStyle":"black",
+    "backgroundColor": "#FBF9FE"
   },
   "tabBar": {
     "color": "#dddddd",
@@ -28,8 +29,8 @@
       "text": "分类"
     }, {
       "pagePath": "pages/components/shoppingCart/index",
-      "iconPath": "image/icon_component.png",
-      "selectedIconPath": "image/icon_component_HL.png",
+      "iconPath": "image/icon_cart.png",
+      "selectedIconPath": "image/icon_cart_HL.png",
       "text": "购物车"
     }, {
       "pagePath": "pages/components/my/index",

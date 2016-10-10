@@ -11,7 +11,7 @@
   <view class="category">
     <block wx:for="{{category}}">
       <view class="item">
-      {{item}}
+      <navigator url="../category/index">{{item}}</navigator>
       </view>
     </block>
   </view>
@@ -20,9 +20,11 @@
     <view class="title b_red"><view style="margin-left: 20rpx;">热门商品</view></view>
     <view class="content">
       <block wx:for="{{products}}">
-        <view class="products_i">
-          <image src="{{item}}" style="width:150rpx;height:150rpx;"/>
-        </view>
+        <navigator url="../shoppingCart/index">
+          <view class="products_i">
+            <image src="{{item}}" style="width:150rpx;height:150rpx;"/>
+          </view>
+        </navigator>
       </block>
     </view>
   </view>
@@ -31,9 +33,11 @@
     <view class="title b_green"><view style="margin-left: 20rpx;">推荐商品</view></view>
     <view class="content">
       <block wx:for="{{products}}">
-        <view class="products_i">
-          <image src="{{item}}" style="width:150rpx;height:150rpx;"/>
-        </view>
+        <navigator url="../shoppingCart/index">
+          <view class="products_i">
+            <image src="{{item}}" style="width:150rpx;height:150rpx;"/>
+          </view>
+        </navigator>
       </block>
     </view>
   </view>
